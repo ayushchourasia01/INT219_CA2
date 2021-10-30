@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Informatics College</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript/js.js="></script>
+
+</head>
+
+<body class="body">
+	<header class="mainheader">
+		<img src="pictures/logo.svg">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="course.html">Course</a></li>
+				<li><a href="#">Login</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<div class="slideshow-container">
+
+		<div class="iambrpslides fade">
+			<div class="numbertext"></div>
+			<img src="./pictures/initiatives.jpg">
+		</div>
+
+		<div class="iambrpslides fade">
+			<div class="numbertext"></div>
+			<img src="./pictures/modiji.png">
+		</div>
+
+		<div class="iambrpslides fade">
+			<div class="numbertext"></div>
+			<img src="./pictures/olympics-slide-all.jpg">
+		</div>
+
+	</div>
+
+
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("iambrpslides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+		}
+	</script>
+	<br>
+
+	<script type="text/javascript">
+		document.title = "Home";
+	</script>
+
+
+	<script src="scripts/slider.js"></script>
+	<div class="mainContent">
+		<div class="Content">
+			<article class="topContent">
+				<header>
+					<h3><a href="#" title="My First Post">LPU Student Innovated A UV Light Racket For Sanitization</a>
+					</h3>
+				</header>
+				<content>
+					<p>Recently an LPU student Anant Kumar Rajput who is pursuing B.Tech. Mechanical Engineering has
+						developed a decontaminating device built under the direction and guidance of Assistant Professor
+						Mandeep Singh and Ruhul Amin Project Officer from Student Research and Project Cell. The novel
+						device sanitizes inert surfaces using Ultra Violet (UV) light emitted by rods which are fixed in
+						the frame of racket model.
+
+						Now, LPU is looking forward to industrial partnerships to commercialize this excellent
+						innovative device which has an estimated mere launch price of 1000 INR for a single racket. LPU
+						Chancellor Ashok Mittal has extremely appreciated the tireless working of the research team
+						behind this wonderful innovation. He said “We are very proud of the research team for developing
+						the portable UV- light racket. The research team worked tirelessly to find a solution to keep
+						away COVID-19. I believe that this will gain huge potential in the market world too, once it is
+						commercialized.”
+
+
+					</p>
+				</content>
+			</article>
+
+			<article class="bottomContent">
+				<header>
+					<h3><a href="#" title="Pathway Programme">LPU Students Design Solar-Powered Driverless Bus</a> </h3>
+				</header>
+				<content>
+					<p>Engineering Students at Lovely Professional University (LPU) have designed and created a unique
+						solar-powered driverless bus. The bus is slated to enter into commercial service later this year
+						and its first prototype will be utilized to welcome and ferry Prime Minister Narendra Modi to
+						the venue of world’ largest ‘Indian Science Congress (ISC) 2019 to be inaugurated at LPU campus
+						on 3rdJanuary 2019. This, Five-Day 106th edition of ISC 2019 will be held from 3rd to 7th
+						January at LPU.
+						The design and creation of the bus has been made keeping in mind the Indian conditions, and the
+						cost of the bus is approximately Rs 6 lakh. As the bus-engine is powered by both battery and
+						solar-cells, so the running cost is almost negligible. With a maximum speed of 30 km per hour,
+						it has a seating capacity of 10-30 persons, as per needs. Over 300 students from mechanical,
+						electrical, and computer engineering departments of the university collaborated under the
+						guidance of LPU professors and experts to design and fabricate the vehicle. The fabrication is
+						being done at the LPU Project Studio where other such R&D and product commercialization also
+						takes place.
+
+					</p>
+				</content>
+			</article>
+
+
+		</div>
+	</div>
+	<aside class="top-sidebar">
+		<article>
+			<h3>Join us today!</h3>
+			<p>Embark on an exciting learning journey with Informatics</p>
+		</article>
+	</aside>
+
+	<aside class="middle-sidebar">
+		<article>
+			<h3>Your Boardroom Qualification</h3>
+			<p>A Degree to stand out from the crowd…...</p>
+		</article>
+	</aside>
+
+	<aside class="buttom-sidebar">
+		<article>
+			<h3>Be ahead of your peers</h3>
+			<p>Fast track your education with Informatics</p>
+		</article>
+	</aside>
+	<footer class="mainFooter">
+		<center>
+			<a href="https://www.facebook.com/LPUUniversity/">Facebook</a>
+			<a href="https://twitter.com/lpuuniversity">Twitter</a>
+			<a href="https://www.youtube.com/channel/UCX9XV7w4GX6f3bnDKAwMKFQ">Youtube</a>
+		</center>
+	</footer>
+
+</body>
+
+</html>
